@@ -240,3 +240,40 @@ footer .company-info a:hover {
     width: 90%; /* Reduce el ancho en pantallas pequeñas */
   }
 }
+
+/* Barra de navegación fija */
+header {
+  position: fixed; /* Fija la barra en la parte superior */
+  top: 0;
+  width: 100%; /* Ocupa todo el ancho */
+  background-color: black; /* Fondo negro */
+  z-index: 1000; /* Se asegura de estar encima del contenido */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombras */
+}
+
+/* Ajuste para el contenido principal */
+main {
+  margin-top: 80px; /* Espacio para la barra fija */
+}
+
+/* Enlace activo */
+nav a.active {
+  color: #FFD700; /* Color dorado para resaltar la página activa */
+  border-bottom: 2px solid #FFD700; /* Subrayado de la página activa */
+}
+
+/* Imágenes con dimensiones específicas */
+img {
+  height: auto; /* Altura proporcional */
+  max-width: 100%; /* No excede el ancho del contenedor */
+}
+
+/* Ejemplo para las imágenes de la galería */
+.gallery img {
+  width: 300px; /* Fija el ancho */
+  height: 200px; /* Fija la altura */
+  object-fit: cover; /* Ajuste dentro del contenedor */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+

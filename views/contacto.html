@@ -5,69 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="js/contact.js"></script>
-    <script src="js/presupuesto-form.js"></script>
 </head>
 <body>
     <header>
         <h1>Mi Empresa</h1>
         <nav>
             <a href="/index.html">Inicio</a>
-            <a href="/views/galeria.html">Galería</a>
+            <a href="/views/contacto.html">Galería</a>
             <a href="/views/presupuesto.html">Presupuesto</a>
             <a href="/views/contacto.html" class="active">Contacto</a>
         </nav>
     </header>
     <main>
-        <form id="myForm">
-            <fieldset>
-              <legend>Información personal</legend>
-              <label for="name">Nombre completo:</label>
-              <input type="text" id="name" name="name" required>
-              
-              <label for="email">Correo electrónico:</label>
-              <input type="email" id="email" name="email" required>
-              
-              <label for="phone">Número de teléfono:</label>
-              <input type="tel" id="phone" name="phone" required>
-              
-              <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" required></textarea>
-          
-              <label for="incidence">Incidencia:</label>
-              <select id="incidence" name="incidence" required>
-                <option value="">Seleccione una opción</option>
-                <option value="problema">Problema</option>
-                <option value="consulta">Consulta</option>
-                <option value="sugerencia">Sugerencia</option>
-              </select>
-            </fieldset>
-          
-            <button type="submit">Enviar</button>
-          </form>
-          
-          <!-- Aquí se incluirá el script para la validación -->
-          <script src="/js/form-validation.js"></script>
-          
+        <h2>Contáctanos</h2>
+        <section>
+            <h3>Datos de Contacto</h3>
+            <p><strong>Teléfono:</strong> +34 123 456 789</p>
+            <p><strong>Email:</strong> contacto@miempresa.com</p>
+            <p><strong>Dirección:</strong> Av. del Comercio, 11, 41520 Sevilla, España</p>
+        </section>
+
+        <section>
+            <h3>Ubicación de la Empresa</h3>
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <button onclick="calcularRuta()">Calcular Ruta Desde Mi Ubicación</button>
+        </section>
+
+        <section>
+            <h3>Ubicación de la Empresa</h3>
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <button onclick="calcularRuta()">Calcular Ruta Desde Mi Ubicación</button>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Mi Empresa</p>
         <div class="social-icons">
             <a href="https://www.instagram.com" target="_blank">
-                <img src="/images/instragram.png" alt="Instagram" class="social-icon">
+                <img src="/images/instragram.png" alt="Instagram" class="social-icon" width="30" height="30">
             </a>
             <a href="https://www.facebook.com" target="_blank">
-                <img src="/images/Facebook.png" alt="Facebook" class="social-icon">
+                <img src="/images/Facebook.png" alt="Facebook" class="social-icon" width="30" height="30">
             </a>
-        </div>
-        <div class="company-info">
-            <p><a href="https://maps.app.goo.gl/LipC6ixx2EDWgt1s7" target="_blank">Dirección: Av. del Comercio, 11</a></p>
-            <p><a href="aviso-legal.html" target="_blank">Aviso Legal</a></p>
         </div>
     </footer>
 
-    <!-- Script de Google Maps -->
+    <!-- Google Maps Script -->
     <script>
         let map, directionsService, directionsRenderer;
 
